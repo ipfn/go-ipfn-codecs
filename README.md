@@ -1,4 +1,4 @@
-# [go-ipfn-codecs][IPv8]: IPFN common codecs registry
+# [go-ipfn-codecs][codecs]: IPFN common codecs registry
 
 [![IPFN project][badge-ipfn]][org-ipfn]
 [![IPFN Documentation][badge-docs]][docs]
