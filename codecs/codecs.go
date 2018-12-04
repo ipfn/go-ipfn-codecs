@@ -49,3 +49,12 @@ func RegisterTarget(codecs map[string]uint64, codecToStr map[uint64]string) {
 		codecToStr[codec] = name
 	}
 }
+
+func init() {
+	// this one should be always before
+	// subsequent calls to RegisterTarget
+	// are using these maps to clone later
+	RegisterTarget(Codecs, CodecToStr)
+	// this one is how we would import it to our package
+	// codecs.RegisterTarget(cid.Codecs, cid.CodecToStr)
+}
